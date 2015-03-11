@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*menu*/
+.menu{
+    width: 100%;
+    border: 0px;
+    margin:0;
+    display: block;
+    position:fixed;
+    z-index: 1000;
+}
+/*navbar*/
+.navbar{
+    width: 100%;
+    border: 0px;
+    font-size: 18px;
+    margin:0;
+    display: block;
+    position:fixed;
+    bottom: 0;
+}
+.ui-content .ui-listview-inset, .ui-panel-inner>.ui-listview-inset{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*custom icon*/
+.buy_car .ui-icon-shop:after,.agent .ui-icon-user:after{
+     background-color: #fe5314;
+}
+.ui-icon-carat-d:after,.ui-icon-carat-r:after,.ui-icon-minus:after{
+    background-color: #999;
+}
+/*banner*/
+.banner{
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+	overflow: hidden;
+}
+.banner .ad_img{
+	width: 98%;
+	height: 98%;
+	margin: auto;
+}
+
+.banner .ad_img li{
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: inline;
+}
+
+.banner .ad_img img{
+	width: 100%;
+	height: 100%;
+}
+/*价格简表*/
+.price li,.thead li,.order li{
+    text-align: center;
+}
+.price p{
+    margin-top: 0;
+}
+.order .active{
+    border-bottom: 2px solid #444;
+    text-decoration:2px;
+}
+.car_content,.car_sel{
+    width: 95%;
+    margin: 5px auto;
+}
+.car_content h4{
+    text-align: center;
+}
+/*品牌选车*/
