@@ -23,6 +23,7 @@ var tabCt = $('.car_content');
 tabCt.eq(1).hide();
 tab.bind('click', function() {
     var index = tab.index(this);
-    $(this).addClass('ui-btn-active').siblings().removeClass('ui-btn-active');
+    $(this).addClass('cur').siblings('a').removeClass();
+    console.log('add');
     tabCt.eq(index).show().siblings('.car_content').hide();
 });

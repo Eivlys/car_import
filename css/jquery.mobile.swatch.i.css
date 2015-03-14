@@ -9,7 +9,7 @@ html body .ui-group-theme-i .ui-bar-inherit {
 	background-color: 			#f9f9f9 /*{a-bar-background-color}*/;
 	border-color:	 		#f9f9f9 /*{a-bar-border}*/;
 	color: 					#4e4e4e /*{a-bar-color}*/;
-	text-shadow: 0 /*{a-bar-shadow-x}*/ 0 /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/  /*{a-bar-shadow-color}*/;
+/*	text-shadow: ;*/
 	font-weight: bold;
 }
 .ui-bar-i {
@@ -23,7 +23,7 @@ html body .ui-group-theme-i .ui-bar-inherit {
 	background-color: 			#f9f9f9 /*{a-page-background-color}*/;
 	border-color:	 		#bbb /*{a-page-border}*/;
 	color: 					#333 /*{a-page-color}*/;
-	text-shadow: 0 /*{a-page-shadow-x}*/ 0 /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ /*{a-page-shadow-color}*/;
+	/*text-shadow: ;*/
 }
 /* Body: Read-only lists, text inputs, collapsible content */
 .ui-body-i,
@@ -35,7 +35,7 @@ html .ui-panel-page-container-i {
 	background-color: 			#fff /*{a-body-background-color}*/;
 	border-color:	 		#ddd /*{a-body-border}*/;
 	color: 					#333 /*{a-body-color}*/;
-	text-shadow: 0 /*{a-body-shadow-x}*/ 0 /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/  /*{a-body-shadow-color}*/;
+	/*text-shadow: ;*/
 }
 .ui-body-i {
 	border-width: 1px;
@@ -85,7 +85,7 @@ html head + body .ui-btn.ui-btn-i:visited {
 	border-color:	 		#484848 /*{a-bup-border}*/;
 	color: 					#e4e4e4 /*{a-bup-color}*/;
 	border-left: 1px solid #333;
-	text-shadow: 0 /*{a-bup-shadow-x}*/ 0 /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/  /*{a-bup-shadow-color}*/;
+	/*text-shadow: ;*/
 }
 /* Button hover */
 .ui-page-theme-i .ui-btn:hover,
@@ -97,7 +97,7 @@ html head + body .ui-btn.ui-btn-i:hover {
 	border-color:	 		#484848 /*{a-bhover-border}*/;
 	color: 					#e4e4e4 /*{a-bhover-color}*/;
 	font-weight: bold;
-	text-shadow: 0 /*{a-bhover-shadow-x}*/ 0 /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/  /*{a-bhover-shadow-color}*/;
+	/*text-shadow: ;*/
 }
 /* Button down */
 .ui-page-theme-i .ui-btn:active,
@@ -108,7 +108,7 @@ html head + body .ui-btn.ui-btn-i:active {
 	background-color: 			#444 /*{a-bdown-background-color}*/;
 	border-color:	 		#444 /*{a-bdown-border}*/;
 	color: 					#fe5314 /*{a-bdown-color}*/;
-	text-shadow: 0 /*{a-bdown-shadow-x}*/ 0 /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/  /*{a-bdown-shadow-color}*/;
+	/*text-shadow: ;*/
 }
 /* Active button */
 .ui-page-theme-i .ui-btn.ui-btn-active,
@@ -139,7 +139,7 @@ html body div.ui-slider-track.ui-body-i .ui-btn-active {
 	/*border-right: 1px solid #333;*/
 	color: 					#fe5314 /*{a-active-color}*/;
 	font-weight:200;
-	text-shadow: 0 /*{a-active-shadow-x}*/ 0 /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/  /*{a-active-shadow-color}*/;
+	/*text-shadow:;*/
 }
 /* Active radio button icon */
 .ui-page-theme-i .ui-radio-on:after,

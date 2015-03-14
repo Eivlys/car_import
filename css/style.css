@@ -36,7 +36,7 @@
 /*banner*/
 .banner{
     width: 100%;
-    height: 200px;
+    height: 174px;
     margin-top: 5px;
 	overflow: hidden;
 }
@@ -58,7 +58,7 @@
 	height: 100%;
 }
 /*价格简表*/
-.price li,.thead li,.order li{
+.price li,.thead li,.order li,.config li{
     text-align: center;
 }
 .price p{
@@ -68,11 +68,32 @@
     border-bottom: 2px solid #444;
     text-decoration:2px;
 }
-.car_content,.car_sel{
+.car_content,.car_sel,.car_info{
     width: 95%;
     margin: 5px auto;
 }
 .car_content h4{
     text-align: center;
 }
+.car_content h4 a{
+    text-decoration: none;    
+}
 /*品牌选车*/
+.cur.ui-link.ui-btn{
+    color: #fe5314;
+    background-color: #e9e9e9;
+    text-shadow:none;
+    border-top: none;
+    border-left:none;
+    border-right: none; 
+    border-bottom: 3px solid #fe5314;
+}
+.order .ui-btn{
+    border: 1px solid #fe5314;
+    border-radius: 5px;
+    background-color: #fe5314;
+    color: #e9e9e9;
+}
+.book{
+    text-shadow:none;
+}
