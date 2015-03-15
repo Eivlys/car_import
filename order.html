@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>车辆预约</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+    <link href="css/jquery.mobile.swatch.i.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+	<div data-role="page" class="car_order">
+		<ul data-role="listview" data-shadow="false" class="" data-theme="a">
+        	<li><img src="img/BMW.png" height="128" width="128" alt="audi" class="ui-corner-none">
+				<h2>BMW X5 豪华版</h2>
+				<p>市场指导价：</p>
+				<p>优惠价：</p>
+			</li>
+    	</ul>
 
+    	<div class="explain">
+    		<p><i class="fa fa-frown-o 2x"></i> &nbsp;抱歉，该车已售罄，现在预订我们会为您加紧调货。</p>
+    	</div>
+
+    	<ul data-role="listview" data-inset="false" data-divider-theme="a">
+            <li data-role="list-divider">预约申请</li>
+            <li class="ui-field-contain">
+            	<label for="name">姓名：</label>
+            	<input type="text" name="name" class="user_info">
+            </li>
+            <li class="ui-field-contain">
+            	<label for="tele">电话：</label>
+            	<input type="tel" name="tele" class="user_info">
+            </li>
+            <li class="ui-field-contain">
+            	<label for="time">看车时间：</label>
+            	<input type="date" name="time" class="user_info">
+            </li>
+            <li class="ui-field-contain">
+            	<label for="adr">看车地点：天津港自贸区</label>
+            </li>
+            <li class="ui-field-contain">
+            	<label for="code">购车码：</label>
+            	<input type="text" name="code" class="user_info" placeholder="请输入购车码"><br/>
+            </li>
+            <span class="get_detail">该购车码由代理人员提供，凭此码可享受代理客户专享优惠活动。<a href="agentPrivilege.html">点击查看详情</a></span>
+            <li data-role="list-divider">使用优惠码</li>
+            <li class="ui-field-contain">
+            	<label for="coupon">优惠码：</label>
+            	<input type="text" name="coupon" class="user_info" placeholder="请输入优惠码"><br/>
+            </li>
+            <span class="get_detail">该优惠码可用于购车时抵用购车现款。<a href="getCoupon.html">点击查看获得方式</a></span>
+            <br/><br/>
+            <li>
+                <div><button type="submit" class="order_submit">提交</button></div>
+        	</li>
+        </ul>
+	</div>
+<script src="javascript/jquery-1.11.1.min.js"></script>
+<script src="javascript/jquery.mobile-1.4.5.min.js"></script>
+<script src="javascript/core.js"></script>
 </body>
 </html>

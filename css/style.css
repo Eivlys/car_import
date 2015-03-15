@@ -2,7 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+body,p,span,h1,h2,h3,h4,h5,h6{
+    font-family: "Microsoft Yehei", "Lantinghei SC", "Hiragino Sans GB", Helvatica, Arial, sans-serif;
+}
 /*menu*/
 .menu{
     width: 100%;
@@ -11,6 +13,11 @@
     display: block;
     position:fixed;
     z-index: 1000;
+}
+.ui-content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 /*navbar*/
 .navbar{
@@ -41,8 +48,8 @@
 	overflow: hidden;
 }
 .banner .ad_img{
-	width: 98%;
-	height: 98%;
+	width: 100%;
+	height: 100%;
 	margin: auto;
 }
 
@@ -68,9 +75,16 @@
     border-bottom: 2px solid #444;
     text-decoration:2px;
 }
-.car_content,.car_sel,.car_info{
-    width: 95%;
+.car_content,.car_sel{
+    width: 100%;
     margin: 5px auto;
+}
+.car_info{
+    width: 100%;
+    margin: 0;
+}
+.car_info .ui-grid-a{
+    padding: 15px;
 }
 .car_content h4{
     text-align: center;
@@ -97,3 +111,56 @@
 .book{
     text-shadow:none;
 }
+.order .ui-btn{
+    float: right;
+    position: relative;
+    margin-right: 10%;
+}
+.car_detail{
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+}
+.car_detail li{
+    list-style: none;
+}
+/*loan*/
+.loan_apply .user_info,.car_order .user_info{
+    float: left;
+    position: relative;
+    border: none;
+    background: #fff;
+}
+.loan_apply .submit{
+    width: 30%;
+    border:1px solid #ccc;
+    margin: 0 auto;
+    box-shadow:none;
+}
+/*order*/
+.explain{
+    text-align: center;
+    padding: 10px;
+}
+.car_order .get_detail{
+    font-size: 12px;
+}
+.order_submit{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
