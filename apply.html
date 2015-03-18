@@ -8,56 +8,53 @@
     <title>申请注册</title>
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
-    <link href="css/jquery.mobile.swatch.i.css" rel="stylesheet">
+    <link href="css/jquery.mobile.swatch.i.css" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div data-role="page" class="loan_apply">
-		<ul data-role="listview" data-inset="false" data-divider-theme="a">
-			<li data-role="list-divider"><a href="introduce.html">代理介绍</a></li>
-            <li data-role="list-divider">基本信息</li>
+	<div data-role="page" class="agent_apply">
+        <p class="page_title"><a href="introduce.html" rel="external" style="font-size:16px"><i class="fa fa-angle-left 4x"></i>代&nbsp;&nbsp;理&nbsp;&nbsp;申&nbsp;&nbsp;请&nbsp;&nbsp;</a></p>
+		<ul data-role="listview" data-inset="false">
+            <li class="list-divider" data-role="list-divider" style="border-bottom: 2px solid #fe5314;color:#fe5314">基本信息</li>
             <li class="ui-field-contain">
-            	<label for="name">姓名：</label>
-            	<input type="text" name="name" class="user_info">
+            	<label for="name">姓名：<input type="text" name="name" class="user_info"></label>
             </li>
             <li class="ui-field-contain">
-            	<label for="age">年龄：</label>
-            	<input type="text" name="age" class="user_info">
+            	<label for="age">年龄：<input type="text" name="age" class="user_info"></label>
             </li>
             <li>
-            	<label for="sex">性别：</label>
-            	<input type="radio" name="sex" class="user_info">男
-            	<input type="radio" name="sex" class="user_info">女
+                <fieldset data-role="controlgroup" data-iconpos="right" data-type="horizontal" data-mini="true">
+                    <legend class="gender">性别：</legend>
+                    <input type="radio" name="sex" id="sex-a" value="on" checked="checked">
+                    <label for="sex-a">男</label>
+                    <input type="radio" name="sex" id="sex-b" value="off">
+                    <label for="sex-b">女</label>
+                </fieldset>
             </li>
-            <li class="ui-field-contain">
+            <li class="ui-field-contain ui-nodisc-icon ui-alt-icon">
             	<label for="local">现居住地：</label>
-            	<select class="province" id="province" onchange="select()" name="local"></select>
-                <select class="city" id="city" name="local"></select>
+                <select id="city" name="local"></select>
+            	<select id="province" onchange="select()" name="local"></select>
         	</li>
-			<li data-role="list-divider">账号信息</li>
+			<li class="list-divider" data-role="list-divider" style="border-bottom: 2px solid #fe5314;color:#fe5314">账号信息</li>
             <li class="ui-field-contain">
-            	<label for="id">身份证：</label>
-            	<input type="text" name="id" class="user_info">
+            	<label for="id">身份证：<input type="text" name="id" class="user_info"></label>
             </li>
             <li class="ui-field-contain">
-            	<label for="tele">手机号：</label>
-            	<input type="tel" name="tele" class="user_info">
+            	<label for="tele">手机号：<input type="tel" name="tele" class="user_info"></label>
             </li>
             <li class="ui-field-contain">
-            	<label for="wechat">微信号：</label>
-            	<input type="text" name="wechat" class="user_info">
+            	<label for="wechat">微信号：<input type="text" name="wechat" class="user_info"></label>
             </li>
             <li class="ui-field-contain">
-            	<label for="nick">微信昵称：</label>
-            	<input type="text" name="nick" class="user_info">
+            	<label for="nick">微信昵称：<input type="text" name="nick" class="user_info"></label>
             </li>
-            <li data-role="list-divider">代理须知</li>
-            <li data-role="list-divider"><a href="">《代理协议》</a><br/><br/>
-            	<input type="checkbox" name="agree" checked="">
-    			<label for="agree">我已阅读并同意上述条款</label>
+            <li class="list-divider" data-role="list-divider" style="border-bottom: 2px solid #fe5314;color:#fe5314">代理须知</li>
+            <li data-role="list-divider" class="protocal"><a href="">《代&nbsp;&nbsp;理&nbsp;&nbsp;协&nbsp;&nbsp;议》</a><br/>
+    			<label for="agree"><input type="checkbox" name="agree" checked="">我已阅读并同意上述条款</label>
             </li>
             <li>
-                <div><button type="submit" class="order_submit">提交</button></div>
+                <div><button type="submit" class="order_submit">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</button></div>
         	</li>
         </ul>
 	</div>

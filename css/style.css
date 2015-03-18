@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-body,p,span,h1,h2,h3,h4,h5,h6{
+body,p,span,h1,h2,h3,h4,h5,h6,label,a{
     font-family: "Microsoft Yehei", "Lantinghei SC", "Hiragino Sans GB", Helvatica, Arial, sans-serif;
 }
 /*menu*/
@@ -29,9 +29,25 @@ body,p,span,h1,h2,h3,h4,h5,h6{
     position:fixed;
     bottom: 0;
 }
+li .list-divider.ui-li-divider{
+    border-bottom: 1px solid #fe5314;
+}
 .ui-content .ui-listview-inset, .ui-panel-inner>.ui-listview-inset{
     margin-top: 0;
     margin-bottom: 0;
+}
+.page_title{
+    padding: 10px;
+    text-align: center;
+    background-color: #fe5314;
+    color: #fff;
+    text-shadow:none;
+    height: 20px;
+}
+.page_title a,.page_title a:hover,.page_title a:visited{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
 }
 /*custom icon*/
 .buy_car .ui-icon-shop:after,.agent .ui-icon-user:after{
@@ -93,7 +109,7 @@ body,p,span,h1,h2,h3,h4,h5,h6{
     text-decoration: none;    
 }
 /*品牌选车*/
-.cur.ui-link.ui-btn{
+li.cur{
     color: #fe5314;
     background-color: #e9e9e9;
     text-shadow:none;
@@ -105,7 +121,7 @@ body,p,span,h1,h2,h3,h4,h5,h6{
 .order .ui-btn{
     border: 1px solid #fe5314;
     border-radius: 5px;
-    background-color: #fe5314;
+    background-color:  ;
     color: #e9e9e9;
 }
 .book{
@@ -125,17 +141,37 @@ body,p,span,h1,h2,h3,h4,h5,h6{
     list-style: none;
 }
 /*loan*/
-.loan_apply .user_info,.car_order .user_info{
+.loan_apply .user_info,.car_order .user_info,.agent_apply .user_info{
     float: left;
     position: relative;
     border: none;
     background: #fff;
 }
-.loan_apply .submit{
+/*agent apply*/
+.agent_apply .order_submit{
+    width: 100%;
+    height: auto;
+    background-color: #fe5314;
+    color: #fff;
+    text-shadow:none;
+}
+.agent_apply li{
+    border: none;
+}
+.agent_apply .protocal{
+    text-align: center;
+}
+.agent_apply .fa.fa-angle-left{
+    float: left;
+    position: relative;
+    margin-left: 5px;
+}
+.agent_apply .ui-controlgroup-label{
     width: 30%;
-    border:1px solid #ccc;
-    margin: 0 auto;
-    box-shadow:none;
+}
+.agent_apply .ui-controlgroup-controls{
+    float: left;
+    position: relative;
 }
 /*order*/
 .explain{
@@ -145,11 +181,19 @@ body,p,span,h1,h2,h3,h4,h5,h6{
 .car_order .get_detail{
     font-size: 12px;
 }
-.order_submit{
-    width: 100%;
-    height: auto;
+.ui-input-text{
+    width: 70%;
+    float: right;
+    margin: 0;
 }
-
+.ui-select{
+    width: 50%;
+    box-shadow: none;
+    background-color: #fff;
+    box-shadow:none;
+    float: right;
+    position: relative;
+}
 
 
 
