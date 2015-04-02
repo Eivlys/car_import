@@ -12,45 +12,81 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div data-role="page">
-		<ul data-role="listview" data-shadow="false" class="" data-theme="a">
-        	<li><img src="img/BMW.png" height="128" width="128" alt="audi" class="ui-corner-none">
+	<div data-role="page" class="deposit" id="main">
+        <p class="page_title"><a href="carInfo.html" rel="external" style="font-size:16px"><i class="fa fa-angle-left fa-2x"></i>支&nbsp;&nbsp;付&nbsp;&nbsp;定&nbsp;&nbsp;金</a></p>
+		<ul data-role="listview" data-shadow="false">
+        	<li style="margin-top:-1.5em;">
+                <img src="img/BMW.png" height="128" width="128" alt="audi" style="margin:10px;"class="ui-corner-none">
 				<h2>BMW X5 豪华版</h2>
 				<p>市场指导价：</p>
 				<p>优惠价：</p>
 			</li>
-			<li><p>定金金额：</p></li>
+			<li><h3>定金金额：</h3></li>
 		</ul>
-		<ul data-role="listview" data-inset="false" data-divider-theme="a">
-            <li data-role="list-divider">预约申请</li>
-            <li class="ui-field-contain">
-            	<label for="name">姓名：</label>
-            	<input type="text" name="name" class="user_info">
-            </li>
-            <li class="ui-field-contain">
-            	<label for="tele">电话：</label>
-            	<input type="tel" name="tele" class="user_info">
-            </li>
-            <li class="ui-field-contain">
-            	<label for="code">购车码：</label>
-            	<input type="text" name="code" class="user_info" placeholder="请输入购车码"><br/>
-            </li>
-            <span class="get_detail">该购车码由代理人员提供，凭此码可享受代理客户专享优惠活动。<a href="agentPrivilege.html">点击查看详情</a></span>
-            <li data-role="list-divider">使用优惠码</li>
-            <li class="ui-field-contain">
-            	<label for="coupon">优惠码：</label>
-            	<input type="text" name="coupon" class="user_info" placeholder="请输入优惠码"><br/>
-            </li>
-            <span class="get_detail">该优惠码可用于购车时抵用购车现款。<a href="getCoupon.html">点击查看获得方式</a></span><br/>
-            <li data-role="list-divider"><a href="">《购车定金支付协议》</a><br/><br/>
-            	<input type="checkbox" name="agree" checked="">
-    			<label for="agree">我已阅读并同意上述条款</label>
-            </li>
+		<ul data-role="listview" data-inset="false">
+            <li data-role="list-divider" style="border-bottom: 2px solid #f8801c;color:#f8801c">预约申请</li>
             <li>
-                <div><button type="submit" class="order_submit">提交</button></div>
+                <div class="ui-field-contain">
+                	<label for="name">姓名：</label>
+                	<input type="text" name="name" class="user_info">
+                </div>
+
+                <div class="ui-field-contain">
+                	<label for="tele">电话：</label>
+                	<input type="tel" name="tele" class="user_info">
+                </div>
+
+                <div class="ui-field-contain">
+                	<label for="code">购车码：</label>
+                	<input type="text" name="code" class="user_info" placeholder="请输入购车码"><br/>
+                </div>
+
+                <p class="get_detail">该购车码由代理人员提供，凭此码可享受代理客户专享优惠活动。<a href="agentPrivilege.html" rel="external">点击查看详情</a></p>
+            </li>
+            <li data-role="list-divider" style="border-bottom: 2px solid #f8801c;color:#f8801c">使用优惠码</li>
+            <li>
+                <div class="ui-field-contain">
+                	<label for="coupon">优惠码：</label>
+                	<input type="text" name="coupon" class="user_info" placeholder="请输入优惠码"><br/>
+                </div>
+                <span class="get_detail">该优惠码可用于购车时抵用购车现款。<a href="getCoupon.html" rel="external">点击查看获得方式</a></span><br/>
+            </li>
+
+            <li data-role="list-divider" class="protocal">
+                <a href="#protocal">《购车定金支付协议》</a><br/>
+                <div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <p><span class="check_detial">购车定金支付协议</span><br/></p>
+                </div>
+    			<label for="agree"><input type="checkbox" name="agree" checked="">我已阅读并同意上述条款</label>
+            </li>
+
+            <li>
+                <div><button type="submit" class="order_submit">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</button></div>
         	</li>
     	</ul>
 	</div>
+
+    <div data-role="page" id="protocal">
+        <p class="page_title"><a href="#main" rel="external" style="font-size:16px"><i class="fa fa-angle-left fa-2x"></i>购&nbsp;&nbsp;车&nbsp;&nbsp;定&nbsp;&nbsp;金&nbsp;&nbsp;支&nbsp;&nbsp;付&nbsp;&nbsp;协&nbsp;&nbsp;议</a></p>
+        <div class="protocal_content">
+            <p><span style="text-align:center;">协议</span><br/><br/>
+            1．进口车在线是我公司旗下网站。进口车在线提醒您在与本站签订代理协议前，请务必仔细阅读本声明条款并透彻理解本声明，您使用进口车在线网站任何内容进行任何销售代理行为及任何其他行为，都被视作是对本声明全部内容的无异议认可。<br/>
+            2．服务内容<br/>
+            2.1 进口车在线网络服务的具体内容由进口车在线根据实际情况进行提供。<br/>
+            2.2 除非本协议另有其它明示规定，进口车在线所推出的新产品、新功能、新服务、新内容，均受到本协议之规范。<br/>
+            2.3 进口车在线仅提供相关的网络内容，除此之外与浏览相关网络内容有关的设备（如电脑、调制解调器、移动终端及其他与接入互联网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费）均应由代理商自行承担。<br/>
+            2.4 本网站上关于进口车在线代理商信息均由代理商自行提供，代理商依法应对其提供的任何信息承担全部责任。进口车在线对此等信息的准确性、完整性、合法性或真实性均不承担任何责任。此外，进口车在线对任何使用或提供本网站信息的商业活动及其风险不承担任何责任。<br/>
+            2.5 未经合法权利人的书面许可，任何人严禁在本网站展示产品图片。未经授权便在本网站上使用该图片都可能违反国际法、商标法、隐私权法、通讯通信法等法律法规。<br/>
+            2.6 代理商可以转发本网站上显示的资料，但这些资料只限用于帮助进口车在线进行平行进口车销售用途，不得用于其他商业用途，无论是否在资料上明示，所有此等资料都是受到版权法的法律保护。代理商没有获得进口车在线或各自版权所有者明确的书面同意下，不得分发、修改、散步、再使用、再传递进行除为进口车在线进行销售外的任何商业用途。<br/>
+            3.代理变更、中断或终止<br/>
+            3.1 如进口车在线根据实际情况考虑与代理商进行代理服务变更、中断或终止，可提前与代理商进行通知沟通。<br/>
+            3.2 如进口车在线代理商与进口车之家变更代理内容，则应严格遵循变更后相关事宜。如中断或终止代理合同，则代理商不得再次使用与本网站相关的一切内容。
+            </p><br/>
+        </div>
+        <div class="btn"><a href="#main">返&nbsp;&nbsp;回&nbsp;&nbsp;订&nbsp;&nbsp;金&nbsp;&nbsp;支&nbsp;&nbsp;付</a></div><br/>
+    </div>
+
 <script src="javascript/jquery-1.11.1.min.js"></script>
 <script src="javascript/jquery.mobile-1.4.5.min.js"></script>
 <script src="javascript/core.js"></script>

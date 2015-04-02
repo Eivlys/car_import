@@ -13,25 +13,29 @@
 </head>
 <body>
 	<div data-role="page" class="loan_apply">
-		<ul data-role="listview" data-shadow="false" class="" data-theme="a">
-        	<li><img src="img/Audi.png" alt="audi" class="ui-corner-none">
+        <p class="page_title"><a href="carInfo.html" rel="external" style="font-size:16px"><i class="fa fa-angle-left fa-2x"></i>申&nbsp;&nbsp;请&nbsp;&nbsp;贷&nbsp;&nbsp;款</a></p>
+		<ul data-role="listview" data-shadow="false">
+        	<li>
+                <img src="img/Audi.png" height="128" width="128" alt="audi" style="margin:10px;" class="ui-corner-none">
 				<h2>BMW X5</h2>
 				<p>裸车：</p>
 				<p>首付：</p>
 			</li>
     	</ul>
-    	<ul data-role="listview" data-inset="false" data-divider-theme="a">
-            <li data-role="list-divider">个人信息</li>
-            <li class="ui-field-contain">
-            	<label for="name">姓名：</label>
-            	<input type="text" name="name" class="user_info">
-            </li>
-            <li class="ui-field-contain">
-            	<label for="tele">电话：</label>
-            	<input type="text" name="tele" class="user_info">
+    	<ul data-role="listview" data-inset="false">
+            <li data-role="list-divider" style="border-bottom: 2px solid #f8801c;color:#f8801c">个人信息</li>
+            <li>
+                <div class="ui-field-contain">
+                	<label for="name">姓名：</label>
+                	<input type="text" name="name" class="user_info">
+                </div>
+                <div class="ui-field-contain">
+                	<label for="tele">电话：</label>
+                	<input type="text" name="tele" class="user_info">
+                </div>
             </li>
             <li>
-                <div><button type="submit" class="submit">提交</button></div>
+                <div><button type="submit" class="order_submit">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</button></div>
         	</li>
         </ul>
 	</div>

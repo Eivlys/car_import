@@ -56,17 +56,23 @@ html .ui-bar-i a:visited,
 html .ui-body-i a:visited,
 html body .ui-group-theme-i a:visited {
     color: #3388cc /*{a-link-visited}*/;
+    background-color: #f9f9f9;
+	border-color: #f9f9f9;
 }
 .ui-page-theme-i a:hover,
 html .ui-bar-i a:hover,
 html .ui-body-i a:hover,
 html body .ui-group-theme-i a:hover {
+	background-color: #f9f9f9;
+	border-color: #f9f9f9;
 	color: #005599 /*{a-link-hover}*/;
 }
 .ui-page-theme-i a:active,
 html .ui-bar-i a:active,
 html .ui-body-i a:active,
 html body .ui-group-theme-i a:active {
+	background-color: #f9f9f9;
+	border-color: #f9f9f9;
 	color: #005599 /*{a-link-active}*/;
 }
 /* Button up */
@@ -81,10 +87,10 @@ html .ui-bar-i .ui-btn:visited,
 html .ui-body-i .ui-btn:visited,
 html body .ui-group-theme-i .ui-btn:visited,
 html head + body .ui-btn.ui-btn-i:visited {
-	background-color: 			#484848 /*{a-bup-background-color}*/;
-	border-color:	 		#484848 /*{a-bup-border}*/;
-	color: 					#e4e4e4 /*{a-bup-color}*/;
-	border-left: 1px solid #333;
+	background-color: 			#fff /*{a-bup-background-color}*/;
+	border-color:	 		#ededed /*{a-bup-border}*/;
+	color: 					#666 /*{a-bup-color}*/;
+	/*border-left: 1px solid #ccc;*/
 	/*text-shadow: ;*/
 }
 /* Button hover */
@@ -93,9 +99,9 @@ html .ui-bar-i .ui-btn:hover,
 html .ui-body-i .ui-btn:hover,
 html body .ui-group-theme-i .ui-btn:hover,
 html head + body .ui-btn.ui-btn-i:hover {
-	background-color: 			#484848 /*{a-bhover-background-color}*/;
-	border-color:	 		#484848 /*{a-bhover-border}*/;
-	color: 					#e4e4e4 /*{a-bhover-color}*/;
+	background-color: 			#fff /*{a-bhover-background-color}*/;
+	border-color:	 		#ededed /*{a-bhover-border}*/;
+	color: 					#666 /*{a-bhover-color}*/;
 	font-weight: bold;
 	/*text-shadow: ;*/
 }
@@ -105,9 +111,9 @@ html .ui-bar-i .ui-btn:active,
 html .ui-body-i .ui-btn:active,
 html body .ui-group-theme-i .ui-btn:active,
 html head + body .ui-btn.ui-btn-i:active {
-	background-color: 			#444 /*{a-bdown-background-color}*/;
-	border-color:	 		#444 /*{a-bdown-border}*/;
-	color: 					#fe5314 /*{a-bdown-color}*/;
+	background-color: 			#fff /*{a-bdown-background-color}*/;
+	/*border-color:	 		#ededed;*/ /*{a-bdown-border}*/
+	color: 					#666 /*{a-bdown-color}*/;
 	/*text-shadow: ;*/
 }
 /* Active button */
@@ -134,12 +140,10 @@ html .ui-bar-i .ui-slider-track .ui-btn-active,
 html .ui-body-i .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-i .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-i .ui-btn-active {
-	background-color: 		#484848 /*{a-active-background-color}*/;
-	border-color:	 		#222 /*{a-active-border}*/;
-	/*border-right: 1px solid #333;*/
-	color: 					#fe5314 /*{a-active-color}*/;
-	font-weight:200;
-	/*text-shadow:;*/
+	background-color: 		#fff /*{a-active-background-color}*/;
+	/*border-color:	 		#ededed;*/ /*{a-active-border}*/
+	color: 					#f8801c /*{a-active-color}*/;
+	text-shadow:none;
 }
 /* Active radio button icon */
 .ui-page-theme-i .ui-radio-on:after,
@@ -147,7 +151,7 @@ html .ui-bar-i .ui-radio-on:after,
 html .ui-body-i .ui-radio-on:after,
 html body .ui-group-theme-i .ui-radio-on:after,
 .ui-btn.ui-radio-on.ui-btn-i:after {
-	border-color:			#3388cc /*{a-active-background-color}*/;
+	border-color:			#ededed /*{a-active-background-color}*/;
 }
 /* Focus */
 .ui-page-theme-i .ui-btn:focus,
@@ -162,19 +166,72 @@ html .ui-body-i .ui-focus,
 html body .ui-group-theme-i .ui-focus,
 html head + body .ui-btn-i.ui-focus,
 html head + body .ui-body-i.ui-focus {
-	-webkit-box-shadow: 0 0 12px 	#3388cc /*{a-active-background-color}*/;
-	-moz-box-shadow: 0 0 12px 		#3388cc /*{a-active-background-color}*/;
-	box-shadow: 0 0 12px 			#3388cc /*{a-active-background-color}*/;
+	-webkit-box-shadow: 0 0 12px 	#fff /* {a-active-background-color}*/;
+	-moz-box-shadow: 0 0 12px 		#fff /*{a-active-background-color}*/;
+	box-shadow: 0 0 12px 			#fff /*{a-active-background-color}*/;
 }
 .ui-btn-icon-left:after, 
 .ui-btn-icon-right:after, 
 .ui-btn-icon-top:after, 
 .ui-btn-icon-bottom:after, 
 .ui-btn-icon-notext:after{
-	background-color: #222;
+	background-color: #666;
 	color: #e05200;
 }
 
+@media (min-width: 28em) {
+	.ui-field-contain,
+	.ui-mobile fieldset.ui-field-contain {
+		padding: 0;
+		margin: 1em 0;
+		border-bottom-width: 0;
+	}
+	.ui-field-contain:before,
+	.ui-field-contain:after {
+		content: "";
+		display: table;
+	}
+	.ui-field-contain:after {
+		clear: both;
+	}
+	.ui-field-contain > label,
+	.ui-field-contain .ui-controlgroup-label,
+	.ui-field-contain > .ui-rangeslider > label {
+		float: left;
+		width: 20%;
+		margin: .5em 2% 0 0;
+	}
+	.ui-popup .ui-field-contain > label,
+	.ui-popup .ui-field-contain .ui-controlgroup-label,
+	.ui-popup .ui-field-contain > .ui-rangeslider > label {
+		float: none;
+		width: auto;
+		margin: 0 0 .4em;
+	}
+	.ui-field-contain > label ~ [class*="ui-"],
+	.ui-field-contain .ui-controlgroup-controls {
+		float: left;
+		width: 78%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	/* ui-hide-label deprecated in 1.4. TODO: Remove in 1.5 */
+	.ui-hide-label > label ~ [class*="ui-"],
+	.ui-hide-label .ui-controlgroup-controls,
+	.ui-popup .ui-field-contain > label ~ [class*="ui-"],
+	.ui-popup .ui-field-contain .ui-controlgroup-controls {
+		float: none;
+		width: 100%;
+	}
+	.ui-field-contain > label ~ .ui-btn-inline {
+		width: auto;
+		margin-right: .625em;
+	}
+	.ui-field-contain > label ~ .ui-btn-inline.ui-btn-icon-notext {
+		width: 1.75em;
+	}
+}
 
 
 

@@ -14,8 +14,9 @@
 </head>
 <body>
 	<div data-role="page" class="car_order">
-		<ul data-role="listview" data-shadow="false" class="" data-theme="a">
-        	<li><img src="img/BMW.png" height="128" width="128" alt="audi" class="ui-corner-none">
+        <p class="page_title"><a href="carInfo.html" rel="external" style="font-size:16px"><i class="fa fa-angle-left fa-2x"></i>车&nbsp;&nbsp;辆&nbsp;&nbsp;预&nbsp;&nbsp;约</a></p>
+		<ul data-role="listview" data-shadow="false">
+        	<li><img src="img/BMW.png" height="128" width="128" alt="audi" style="margin:10px;" class="ui-corner-none">
 				<h2>BMW X5 豪华版</h2>
 				<p>市场指导价：</p>
 				<p>优惠价：</p>
@@ -23,40 +24,47 @@
     	</ul>
 
     	<div class="explain">
-    		<p><i class="fa fa-frown-o 2x"></i> &nbsp;抱歉，该车已售罄，现在预订我们会为您加紧调货。</p>
+    		<p><i class="fa fa-frown-o 2x"></i>&nbsp;抱歉，该车已售罄，现在预订我们会为您加紧调货。</p>
     	</div>
 
     	<ul data-role="listview" data-inset="false" data-divider-theme="a">
-            <li data-role="list-divider">预约申请</li>
-            <li class="ui-field-contain">
-            	<label for="name">姓名：</label>
-            	<input type="text" name="name" class="user_info">
-            </li>
-            <li class="ui-field-contain">
-            	<label for="tele">电话：</label>
-            	<input type="tel" name="tele" class="user_info">
-            </li>
-            <li class="ui-field-contain">
-            	<label for="time">看车时间：</label>
-            	<input type="date" name="time" class="user_info">
-            </li>
-            <li class="ui-field-contain">
-            	<label for="adr">看车地点：天津港自贸区</label>
-            </li>
-            <li class="ui-field-contain">
-            	<label for="code">购车码：</label>
-            	<input type="text" name="code" class="user_info" placeholder="请输入购车码"><br/>
-            </li>
-            <span class="get_detail">该购车码由代理人员提供，凭此码可享受代理客户专享优惠活动。<a href="agentPrivilege.html">点击查看详情</a></span>
-            <li data-role="list-divider">使用优惠码</li>
-            <li class="ui-field-contain">
-            	<label for="coupon">优惠码：</label>
-            	<input type="text" name="coupon" class="user_info" placeholder="请输入优惠码"><br/>
-            </li>
-            <span class="get_detail">该优惠码可用于购车时抵用购车现款。<a href="getCoupon.html">点击查看获得方式</a></span>
-            <br/><br/>
+            <li data-role="list-divider" style="border-bottom: 2px solid #f8801c;color:#f8801c">预约申请</li>
             <li>
-                <div><button type="submit" class="order_submit">提交</button></div>
+                <div class="ui-field-contain">
+                	<label for="name">姓名：</label>
+                	<input type="text" name="name" class="user_info">
+                </div>
+                
+                <div class="ui-field-contain">
+                	<label for="tele">电话：</label>
+                	<input type="tel" name="tele" class="user_info">
+                </div>
+
+                <div class="ui-field-contain">
+                	<label for="time">看车时间：</label>
+                	<input type="date" name="time" class="user_info">
+                </div>
+
+                <div class="ui-field-contain">
+                	<label for="adr">看车地点：天津港自贸区</label>
+                </div>
+
+                <div class="ui-field-contain">
+                	<label for="code">购车码：</label>
+                	<input type="text" name="code" class="user_info" placeholder="请输入购车码"><br/>
+                </div>
+                <span class="get_detail">该购车码由代理人员提供<br/>凭此码可享受代理客户专享优惠活动。<a href="agentPrivilege.html" rel="external">点击查看详情</a></span>
+            </li>
+            <li data-role="list-divider" style="border-bottom: 2px solid #f8801c;color:#f8801c">使用优惠码</li>
+            <li>
+                <div class="ui-field-contain">
+                	<label for="coupon">优惠码：</label>
+                	<input type="text" name="coupon" class="user_info" placeholder="请输入优惠码"><br/>
+                </div>
+                <span class="get_detail">该优惠码可用于抵用购车现款。<a href="getCoupon.html" rel="external">点击查看获得方式</a></span>
+            </li>
+            <li>
+                <div><button type="submit" class="order_submit">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</button></div>
         	</li>
         </ul>
 	</div>

@@ -11,35 +11,42 @@
     <link href="css/jquery.mobile.swatch.i.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body onload="resize()">
 	<div data-role="page">
         <div class="car_info">
             <div data-role="header" class="order">
-                <ul class="ui-grid-a">
-                    <li class="ui-block-a"><p>奥迪A8</p><br/><span>已售出12辆</span></li>
+                <p class="page_title"><a href="carSelect.html" rel="external" style="font-size:16px"><i class="fa fa-angle-left fa-2x"></i>车&nbsp;&nbsp;辆&nbsp;&nbsp;详&nbsp;&nbsp;情</a></p>
+                <ul class="ui-grid-b">
+                    <li class="ui-block-a">
+                        <img src="img/BMW.png" height="64" width="64">
+                    </li>
                     <li class="ui-block-b">
-                        <a href="order.html" class="ui-btn"><span class="book">预约购买</span></a>
+                        <h3>奥迪A8</h3>
+                        <p>已售出<span style="color:#f8801c">&nbsp;12&nbsp;</span>辆</p>
+                    </li>
+                    <li class="ui-block-c">
+                        <a href="order.html" class="ui-btn" rel="external" style="background-color:#f8801c;color:#fff;right:5px;"><span class="book">预约购买</span></a>
                     </li>
                 </ul>
             </div>
-         <div data-role="navbar">
+         <div data-role="navbar" data-theme="i">
             <ul id="tab_ls">
-                <li><a href="#" class="cur">报价</a></li>
-                <li><a href="#">配置</a></li>
-                <li><a href="#">图片</a></li>
+                <li class="cur"><a href="#"><span>报价</span></a></li>
+                <li><a href="#"><span>配置</span></a></li>
+                <li><a href="#"><span>图片</span></a></li>
             </ul>
          </div>
 
          <div class="car_content">
             <div>
-                <h4 style="text-align:center"><a href="loanService.html">底息贷款，立即申请！</a></h4>
+                <h4 style="text-align:center"><a href="loanService.html" rel="external">底息贷款，立即申请！</a></h4>
                 <hr style="color:#eee;margin:5px">
                 <ul class="car_detail">
-                    <li>市场指导价：</li>
-                    <li>优惠价：</li>
-                    <li>价格有效期：</li>
-                    <li>车辆状况：</li>
-                    <li>车辆库存：</li>
+                    <li>市场指导价：<span>￥765,432</span></li>
+                    <li>优惠价：<span>￥760,432</span></li>
+                    <li>价格有效期：<span>2015.5.30</span></li>
+                    <li>车辆状况：<span>有货</span></li>
+                    <li>车辆库存：<span>2辆</span></li>
                 </ul>
                 <br/>
                 <ul data-role="listview" data-divider-theme="a">
@@ -61,7 +68,7 @@
                 <div data-role="collapsible" data-collapsed="false" data-mini="true" data-collapsed-icon="carat-d" data-iconpos="right" data-content-theme="false">
                     <h3>基本信息</h3>
                     <ul class="ui-grid-b">
-                        <li class="ui-block-a">排量</li>
+                        <li class="ui-block-a">排&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</li>
                         <li class="ui-block-b">1.4L</li>
                         <li class="ui-block-c">1.4L</li>
                     </ul>
@@ -111,15 +118,19 @@
          </div>
 
          <div class="car_content">
-             
+            <div class="car_pic" id="car_pic">
+                <img src="img/ad1.jpg" alt="广告1" >
+                <img src="img/ad2.jpg" alt="广告2" >
+                <img src="img/ad3.jpg" alt="广告3" >
+            </div>
+            
          </div>
-
-
 
         </div>
 	</div>
 <script src="javascript/jquery-1.11.1.min.js"></script>
 <script src="javascript/jquery.mobile-1.4.5.min.js"></script>
+<script src="javascript/jquery.slides.min.js"></script>
 <script src="javascript/core.js"></script>
 </body>
 </html>

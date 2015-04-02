@@ -11,8 +11,15 @@ body,p,span,h1,h2,h3,h4,h5,h6,label,a{
     border: 0px;
     margin:0;
     display: block;
-    position:fixed;
+    position: fixed;
     z-index: 1000;
+}
+.sales_menu{
+    width: 100%;
+    border: 0px;
+    margin:0;
+    display: inline-block;
+    position: static;
 }
 .ui-content{
     width: 100%;
@@ -29,8 +36,11 @@ body,p,span,h1,h2,h3,h4,h5,h6,label,a{
     position:fixed;
     bottom: 0;
 }
+.ui-navbar ul{
+    border-top: 1px solid #ddd;
+}
 li .list-divider.ui-li-divider{
-    border-bottom: 1px solid #fe5314;
+    border-bottom: 1px solid #f8801c;
 }
 .ui-content .ui-listview-inset, .ui-panel-inner>.ui-listview-inset{
     margin-top: 0;
@@ -39,7 +49,7 @@ li .list-divider.ui-li-divider{
 .page_title{
     padding: 10px;
     text-align: center;
-    background-color: #fe5314;
+    background-color: #f8801c;
     color: #fff;
     text-shadow:none;
     height: 20px;
@@ -49,9 +59,15 @@ li .list-divider.ui-li-divider{
     text-decoration: none;
     font-size: 14px;
 }
+p.check_detial{
+    text-align: center;
+}
 /*custom icon*/
-.buy_car .ui-icon-shop:after,.agent .ui-icon-user:after{
-     background-color: #fe5314;
+.buy_car .ui-icon-shop:after,.agent .ui-icon-user:after,.help .ui-icon-info:after{
+     background-color: #f8801c;
+}
+..ui-icon-shop:after:visited,.ui-icon-shop:after:hover{
+    background-color: #f8801c;
 }
 .ui-icon-carat-d:after,.ui-icon-carat-r:after,.ui-icon-minus:after{
     background-color: #999;
@@ -91,10 +107,23 @@ li .list-divider.ui-li-divider{
     border-bottom: 2px solid #444;
     text-decoration:2px;
 }
-.car_content,.car_sel{
+.car_content{
     width: 100%;
     margin: 5px auto;
 }
+.car_sel{
+    width: 100%;
+    margin: 0;
+}
+.car_content .sgl_car{
+    background-color: #fff;
+}
+.car_content .thead .ui-grid-c{
+    background-color: #f8801c;
+    color: #fff;
+    padding: 5px;
+}
+/*car_info*/
 .car_info{
     width: 100%;
     margin: 0;
@@ -102,27 +131,57 @@ li .list-divider.ui-li-divider{
 .car_info .ui-grid-a{
     padding: 15px;
 }
+.car_info .order .ui-block-b{
+    padding-top: 5px;
+}
 .car_content h4{
     text-align: center;
 }
 .car_content h4 a{
     text-decoration: none;    
 }
+.car_info .car_pic{
+    width: 98%;
+    height: 250px;
+    margin: 5px auto;
+}
+.car_info .car_pic img{
+    width: 100%;
+    height: 200px;
+}
+.car_info #tab_ls span{
+    font-size: 16px;
+}
+.config a{
+    font-size: 16px;
+    font-weight: normal;
+}
+.pic_slide{
+    width: 95%;
+    height: 300px;
+    display: block;
+}
+
 /*品牌选车*/
 li.cur{
-    color: #fe5314;
+    color: #f8801c;
     background-color: #e9e9e9;
     text-shadow:none;
     border-top: none;
     border-left:none;
     border-right: none; 
-    border-bottom: 3px solid #fe5314;
+    border-bottom: 3px solid #f8801c;
+}
+.cur a.ui-btn.ui-link{
+    color: #f8801c;
 }
 .order .ui-btn{
-    border: 1px solid #fe5314;
+    border: 1px solid #f8801c;
     border-radius: 5px;
-    background-color:  ;
-    color: #e9e9e9;
+}
+.order .ui-block-b{
+    text-align: left;
+    line-height: 1.8em;
 }
 .book{
     text-shadow:none;
@@ -133,48 +192,84 @@ li.cur{
     margin-right: 10%;
 }
 .car_detail{
-    width: 98%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
 }
 .car_detail li{
     list-style: none;
 }
+.car_detail span{
+    float: right;
+    position: relative;
+}
+.car_opt.ui-listview{
+    margin: -1em 0 0 0; 
+}
+a.sgl_car.ui-btn.ui-btn-icon-right.ui-icon-carat-r{
+    background-color: #fff;
+}
+a.ui-link.ui-btn.ui-btn-active{
+    background-color: #f6f6f6;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+}
 /*loan*/
-.loan_apply .user_info,.car_order .user_info,.agent_apply .user_info{
+.loan_apply .user_info,.car_order .user_info,.agent_apply .user_info,.deposit .user_info{
     float: left;
     position: relative;
     border: none;
     background: #fff;
 }
 /*agent apply*/
-.agent_apply .order_submit{
-    width: 100%;
+.agent_apply .order_submit,.deposit .order_submit,.car_order .order_submit,.loan_apply .order_submit,.introduce .ui-btn.order_submit{
+    width: 100%;.
     height: auto;
-    background-color: #fe5314;
+    background-color: #f8801c;
     color: #fff;
     text-shadow:none;
 }
-.agent_apply li{
+.agent_apply li,.deposit li{
     border: none;
 }
-.agent_apply .protocal{
+.agent_apply .protocal,.deposit .protocal{
     text-align: center;
 }
-.agent_apply .fa.fa-angle-left{
+.protocal_content{
+    width: 95%;
+    margin: 0 auto;
+}
+.protocal_content span{
+    text-align: center;
+}
+.protocal a{
+    text-decoration: none;
+}
+.fa.fa-angle-left{
     float: left;
-    position: relative;
-    margin-left: 5px;
+    position: absolute;
+    left: 10px;
+    top:2px; 
 }
 .agent_apply .ui-controlgroup-label{
-    width: 30%;
+    width: 20%;    
+    float:left;
+    margin:.5em 2% 0 0;
 }
 .agent_apply .ui-controlgroup-controls{
+    width: 60%;
     float: left;
     position: relative;
+    border: none;
+}
+/*deposit*/
+.deposit .get_detail{
+    font-size: 12px;
 }
 /*order*/
 .explain{
+    font-size: 15px;
     text-align: center;
     padding: 10px;
 }
@@ -186,25 +281,135 @@ li.cur{
     float: right;
     margin: 0;
 }
-.ui-select{
-    width: 50%;
+.btn{
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f8801c;
+    padding-top: 8px;
+}
+.btn a.ui-link{
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 14px;
+}
+@media (min-width: 20em) {
+    .ui-field-contain,
+    .ui-mobile fieldset.ui-field-contain {
+        padding: 0;
+        margin: 1em 0;
+        border-bottom-width: 0;
+    }
+    .ui-field-contain:before,
+    .ui-field-contain:after {
+        content: "";
+        display: table;
+    }
+    .ui-field-contain:after {
+        clear: both;
+    }
+    .ui-field-contain > label,
+    .ui-field-contain .ui-controlgroup-label,
+    .ui-field-contain > .ui-rangeslider > label {
+        float: left;
+        width: 20%;
+        margin: .5em 2% 0 0;
+    }
+    .ui-popup .ui-field-contain > label,
+    .ui-popup .ui-field-contain .ui-controlgroup-label,
+    .ui-popup .ui-field-contain > .ui-rangeslider > label {
+        float: none;
+        width: auto;
+        margin: 0 0 .4em;
+    }
+    .ui-field-contain > label ~ [class*="ui-"],
+    .ui-field-contain .ui-controlgroup-controls {
+        float: left;
+        width: 78%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    /* ui-hide-label deprecated in 1.4. TODO: Remove in 1.5 */
+    .ui-hide-label > label ~ [class*="ui-"],
+    .ui-hide-label .ui-controlgroup-controls,
+    .ui-popup .ui-field-contain > label ~ [class*="ui-"],
+    .ui-popup .ui-field-contain .ui-controlgroup-controls {
+        float: none;
+        width: 100%;
+    }
+    .ui-field-contain > label ~ .ui-btn-inline {
+        width: auto;
+        margin-right: .625em;
+    }
+    .ui-field-contain > label ~ .ui-btn-inline.ui-btn-icon-notext {
+        width: 1.75em;
+    }
+}
+.agent_apply .ui-field-contain > label ~ [class="ui-select"]{
+    width: 39%;
     box-shadow: none;
     background-color: #fff;
-    box-shadow:none;
     float: right;
     position: relative;
 }
+.agent_apply #city-button,.agent_apply #province-button{
+    background-color: #fff;
+    box-shadow: none;
+}
+.agent_apply .ui-icon-carat-d:after,.ui-icon-carat-r:after,.ui-icon-minus:after{
+    background-color: #f8801c;
+}
+.agent_apply .ui-btn.ui-btn-active{
+    background-color: #f8801c;
+    color: #fff;
+    text-shadow:none;
+    border: 1px solid #f8801c;
+}
+/*user center*/
+.function{
+    float: right;
+    text-decoration: none;
+}
+.sales_record .ui-btn:active,.sales_record .ui-btn:visited,.ui-block-a:active,.ui-block-a:visited{
+    background-color: #fff;
+}
+.ui-btn:active,.ui-btn:visited{
+    background-color: #fff;
+}
 
+/*图文介绍页*/
+article{
+    width: 98%;
+    height: auto;
+    overflow: auto;
+    font-size:16px;
+    color:#444;
+    padding: 5px;
+}
+.pic_wrap{
+    width: 98%;
+    height: 30%;
+    margin: 5px auto auto auto ;
 
-
-
-
-
-
-
-
-
-
-
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.ads .agent_apply{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8801c;
+}
+.ads .agent_apply a{
+    color: #fff;
+    text-decoration: none;
+}
 
 

@@ -12,45 +12,65 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div data-role="page" class="agent_apply">
-        <p class="page_title"><a href="introduce.html" rel="external" style="font-size:16px"><i class="fa fa-angle-left 4x"></i>代&nbsp;&nbsp;理&nbsp;&nbsp;申&nbsp;&nbsp;请&nbsp;&nbsp;</a></p>
+	<div data-role="page" class="agent_apply" id="main">
+        <p class="page_title"><a href="agentIntroduce.html" rel="external" style="font-size:16px"><i class="fa fa-angle-left fa-2x"></i>代&nbsp;&nbsp;理&nbsp;&nbsp;申&nbsp;&nbsp;请&nbsp;&nbsp;</a></p>
 		<ul data-role="listview" data-inset="false">
-            <li class="list-divider" data-role="list-divider" style="border-bottom: 2px solid #fe5314;color:#fe5314">基本信息</li>
-            <li class="ui-field-contain">
-            	<label for="name">姓名：<input type="text" name="name" class="user_info"></label>
-            </li>
-            <li class="ui-field-contain">
-            	<label for="age">年龄：<input type="text" name="age" class="user_info"></label>
-            </li>
-            <li>
+            <li >
+                <div class="ui-field-contain">
+                    <label for="name">姓名：</label>
+                    <input type="text" name="name" class="user_info">
+                </div>
+                
+                <div class="ui-field-contain">
+                    <label for="age">年龄：</label>
+                    <input type="text" name="age" class="user_info">
+                </div>
+                
+                <div class="ui-field-contain">
                 <fieldset data-role="controlgroup" data-iconpos="right" data-type="horizontal" data-mini="true">
                     <legend class="gender">性别：</legend>
                     <input type="radio" name="sex" id="sex-a" value="on" checked="checked">
                     <label for="sex-a">男</label>
                     <input type="radio" name="sex" id="sex-b" value="off">
                     <label for="sex-b">女</label>
-                </fieldset>
+                </fieldset>
+                </div>
+                
+                <div class="ui-field-contain">
+                    <label for="local">现居住地：</label>
+                    <select id="city" name="local"></select>
+                    <select id="province" onchange="select()" name="local"></select>
+                </div>
+                    
             </li>
-            <li class="ui-field-contain ui-nodisc-icon ui-alt-icon">
-            	<label for="local">现居住地：</label>
-                <select id="city" name="local"></select>
-            	<select id="province" onchange="select()" name="local"></select>
-        	</li>
-			<li class="list-divider" data-role="list-divider" style="border-bottom: 2px solid #fe5314;color:#fe5314">账号信息</li>
-            <li class="ui-field-contain">
-            	<label for="id">身份证：<input type="text" name="id" class="user_info"></label>
+			<li>
+                <div class="ui-field-contain">
+                    <label for="id">身份证：</label>
+                    <input type="text" name="id" class="user_info">
+                </div>
+                
+                
+                <div class="ui-field-contain">
+                    <label for="tele">手机号：</label>
+                    <input type="tel" name="tele" class="user_info">
+                </div>
+                
+                
+                <div class="ui-field-contain">
+                    <label for="wechat">微信号：</label>
+                    <input type="text" name="wechat" class="user_info">
+                </div>
+                
+                
+                <div class="ui-field-contain"> 
+                    <label for="nick">微信昵称：</label>
+                    <input type="text" name="nick" class="user_info">
+                </div>
             </li>
-            <li class="ui-field-contain">
-            	<label for="tele">手机号：<input type="tel" name="tele" class="user_info"></label>
-            </li>
-            <li class="ui-field-contain">
-            	<label for="wechat">微信号：<input type="text" name="wechat" class="user_info"></label>
-            </li>
-            <li class="ui-field-contain">
-            	<label for="nick">微信昵称：<input type="text" name="nick" class="user_info"></label>
-            </li>
-            <li class="list-divider" data-role="list-divider" style="border-bottom: 2px solid #fe5314;color:#fe5314">代理须知</li>
-            <li data-role="list-divider" class="protocal"><a href="">《代&nbsp;&nbsp;理&nbsp;&nbsp;协&nbsp;&nbsp;议》</a><br/>
+            
+            <li class="list-divider" data-role="list-divider" style="border-bottom: 2px solid #f8801c;color:#f8801c">代理须知</li>
+            <li data-role="list-divider" class="protocal">
+                <a href="#protocal">《代&nbsp;&nbsp;理&nbsp;&nbsp;协&nbsp;&nbsp;议》</a><br/>
     			<label for="agree"><input type="checkbox" name="agree" checked="">我已阅读并同意上述条款</label>
             </li>
             <li>
@@ -58,9 +78,47 @@
         	</li>
         </ul>
 	</div>
+
+    <div data-role="page" id="protocal">
+        <p class="page_title"><a href="#main" rel="external" style="font-size:16px"><i class="fa fa-angle-left fa-2x"></i>代&nbsp;&nbsp;理&nbsp;&nbsp;协&nbsp;&nbsp;议</a></p>
+        <div class="protocal_content">
+            <p><span style="text-align:center;">进口车在线权责协议</span><br/>
+            1．进口车在线是我公司旗下网站。进口车在线提醒您在与本站签订代理协议前，请务必仔细阅读本声明条款并透彻理解本声明，您使用进口车在线网站任何内容进行任何销售代理行为及任何其他行为，都被视作是对本声明全部内容的无异议认可。<br/>
+            2．服务内容<br/>
+            2.1 进口车在线网络服务的具体内容由进口车在线根据实际情况进行提供。<br/>
+            2.2 除非本协议另有其它明示规定，进口车在线所推出的新产品、新功能、新服务、新内容，均受到本协议之规范。<br/>
+            2.3 进口车在线仅提供相关的网络内容，除此之外与浏览相关网络内容有关的设备（如电脑、调制解调器、移动终端及其他与接入互联网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费）均应由代理商自行承担。<br/>
+            2.4 本网站上关于进口车在线代理商信息均由代理商自行提供，代理商依法应对其提供的任何信息承担全部责任。进口车在线对此等信息的准确性、完整性、合法性或真实性均不承担任何责任。此外，进口车在线对任何使用或提供本网站信息的商业活动及其风险不承担任何责任。<br/>
+            2.5 未经合法权利人的书面许可，任何人严禁在本网站展示产品图片。未经授权便在本网站上使用该图片都可能违反国际法、商标法、隐私权法、通讯通信法等法律法规。<br/>
+            2.6 代理商可以转发本网站上显示的资料，但这些资料只限用于帮助进口车在线进行平行进口车销售用途，不得用于其他商业用途，无论是否在资料上明示，所有此等资料都是受到版权法的法律保护。代理商没有获得进口车在线或各自版权所有者明确的书面同意下，不得分发、修改、散步、再使用、再传递进行除为进口车在线进行销售外的任何商业用途。<br/>
+            3.代理变更、中断或终止<br/>
+            3.1 如进口车在线根据实际情况考虑与代理商进行代理服务变更、中断或终止，可提前与代理商进行通知沟通。<br/>
+            3.2 如进口车在线代理商与进口车之家变更代理内容，则应严格遵循变更后相关事宜。如中断或终止代理合同，则代理商不得再次使用与本网站相关的一切内容。
+            4.对如下事宜不承担任何法律责任<br/>
+            4.1 代理因个人原因造成的经济、法律问题。<br/>
+            4.2 代理以本网站名义做与本网站服务不相关的事情。<br/>
+            5.一贯高度重视知识产权保护并遵守中国各项知识产权法律、法规和具有约束力的规范性文件，同时应严格遵守竞业禁止条款。对此我们拥有以下权利：<br/>
+            5.1 对于进口车在线上提供的信息，我们有权进行随时修改、删除等操作。<br/>
+            5.2 对于进口车在线代理商使用本网站提供的信息进行任何违反中国各项法律行为，本网站将不承担任何法律责任。<br/>
+            5.3 对于进口车在线代理商使用本网站任何内容进行不通知本网站与客户及供货商进行的任何经济相关行为，本网站保留追责权利。<br/>
+            5.4 在代理关系存续期间，本网站代理商未经授权，不得以竞争为目的、或处于私利、或为第三人谋利、或为故意加害于本网站及本公司，擅自披露、使用商业秘密、制造再现商业秘密器材、套取与商业秘密有关信息等行为，本网站保留追责权利。<br/>
+            5.5 未经进口车在线同意，在代理关系存续期间，代理商不得自经营或者为他人经营车辆销售等行为。<br/>
+            5.6 进口车在线代理商在终止代理服务之前不得抢夺进口车之家客户，不得引诱其他代理商终止代理行为。<br/>
+            6.违约赔偿<br/>
+            6.1 进口车在线代理商同意保障和维护本网站利益，如因代理商违反有关法律、法规或本协议下的任何条款而给本网站或任何第三方造成损失，代理商同意承担由此造成的损害赔偿责任。<br/>
+            7.其他规定<br/>
+            7.1 本代理协议构成双方对本协议之约定事项及其他有关事宜的完整协议，除本协议规定的之外，未赋予本协议各方其他权利。<br/>
+            7.2 如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。<br/><br/>
+
+                兹有以上网站代理商权责协议于2015年3月23日公布并生效，请代理商仔细阅读并同意本协议。代理商对本网站包括但不限于的访问浏览、利用、转载、宣传、链接等，均视为访问者同意本网站免责协议。<br/>
+            </p>
+            <div class="btn"><a href="#main">返&nbsp;&nbsp;回&nbsp;&nbsp;申&nbsp;&nbsp;请&nbsp;&nbsp;页</a></div><br/>
+        </div>
+    </div>
+
 <script src="javascript/jquery-1.11.1.min.js"></script>
 <script src="javascript/jquery.mobile-1.4.5.min.js"></script>
 <script src="javascript/citypick.js"></script>
-<script src="javascript/core.js"></script>
+<!-- <script src="javascript/core.js"></script> -->
 </body>
 </html>
