@@ -64,6 +64,7 @@ $(function() {
 //tab标签切换
 var tabIndex = 0;
 var tab = $('#tab_ls').find('a');
+console.log(tab.length);
 var tabLi = $('#tab_ls').find('li');
 var tabCt = $('.car_content');
 tabCt.eq(1).hide();

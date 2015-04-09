@@ -48,14 +48,14 @@ html .ui-body-i a,
 html body .ui-group-theme-i a {
 	background-color: #f9f9f9;
 	border-color: #f9f9f9;
-	color: #3388cc /*{a-link-color}*/;
+	color: #fff /*{a-link-color}*/;
 	font-weight: bold;
 }
 .ui-page-theme-i a:visited,
 html .ui-bar-i a:visited,
 html .ui-body-i a:visited,
 html body .ui-group-theme-i a:visited {
-    color: #3388cc /*{a-link-visited}*/;
+    color: #fff /*{a-link-visited}*/;
     background-color: #f9f9f9;
 	border-color: #f9f9f9;
 }
@@ -166,9 +166,9 @@ html .ui-body-i .ui-focus,
 html body .ui-group-theme-i .ui-focus,
 html head + body .ui-btn-i.ui-focus,
 html head + body .ui-body-i.ui-focus {
-	-webkit-box-shadow: 0 0 12px 	#fff /* {a-active-background-color}*/;
-	-moz-box-shadow: 0 0 12px 		#fff /*{a-active-background-color}*/;
-	box-shadow: 0 0 12px 			#fff /*{a-active-background-color}*/;
+	-webkit-box-shadow: 0   #fff /* {a-active-background-color}*/;
+	-moz-box-shadow: 0		#fff /*{a-active-background-color}*/;
+	box-shadow: 0			#fff /*{a-active-background-color}*/;
 }
 .ui-btn-icon-left:after, 
 .ui-btn-icon-right:after, 

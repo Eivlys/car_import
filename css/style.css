@@ -48,6 +48,7 @@ li .list-divider.ui-li-divider{
 }
 .page_title{
     padding: 10px;
+    margin-top: -0.05em; 
     text-align: center;
     background-color: #f8801c;
     color: #fff;
@@ -61,6 +62,13 @@ li .list-divider.ui-li-divider{
 }
 p.check_detial{
     text-align: center;
+}
+.collapse_list a,.collapse_list a:hover,.collapse_list a:active,.collapse_list a:visited,.collapse_list a:focus{
+    background-color: #fff;
+    color: #4e4e4e;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow: none;
 }
 /*custom icon*/
 .buy_car .ui-icon-shop:after,.agent .ui-icon-user:after,.help .ui-icon-info:after{
