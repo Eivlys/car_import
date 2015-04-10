@@ -75,3 +75,13 @@ tab.bind('click', function() {
     console.log('add');
     tabCt.eq(index).show().siblings('.car_content').hide();
 });
+
+//collapse信息展示
+var titIndex = 0;
+var tit = $('.collapse_list');
+var info = $('.collapse_info');
+tit.bind('click', function() {
+    var index = tit.index(this);
+    info.eq(index).toggle(300);
+    /* Act on the event */
+});
